@@ -20,7 +20,7 @@ func 뽑기(div:Int) -> Int {
 
 let 티 = M
 let 갯수 = 5
-let 시작할까요 = false
+let 시작할까요 = true
 
 //let 티 = L
 //let 갯수 = 5
@@ -31,17 +31,18 @@ let 시작할까요 = false
 //let 시작할까요 = false
 
 if 시작할까요 {
-    for 번 in 0..갯수+5 {
-        let n = 뽑기(countElements(티))
-        var text = NSText(frame: NSRect(x: 0, y: 0, width: 900, height: 700))
-        text.font = NSFont.systemFontOfSize(150)
-        let 안쪽 = 갯수 <= 번
-        let 결과 = 안쪽 ? "😭 흑 아쉽다" : "😍 당첨자"
-        text.string = "\(번+1)번째\n\(결과): \(티[n])"
-        XCPCaptureValue("누구", 티[n])
-    if 안쪽 {            XCPCaptureValue("저런", text)
-    } else {
+for 번 in 0..갯수+5 {
+    let n = 뽑기(countElements(티))
+    var text = NSText(frame: NSRect(x: 0, y: 0, width: 900, height: 700))
+    text.font = NSFont.systemFontOfSize(150)
+    let 안쪽 = 갯수 > 번
+    let 결과 = 안쪽 ? "😍 당첨자" : "😭 흑 아쉽다"
+    text.string = "\(번+1)번째\n\(결과): \(티[n])"
+    XCPCaptureValue("누구", 티[n])
+    if 안쪽 {
         XCPCaptureValue("축하합니다", text)
+    } else {
+        XCPCaptureValue("저런", text)
     }
 }
 }
