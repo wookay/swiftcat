@@ -1,3 +1,10 @@
+
+
+// 공정하고 투명한 추첨을 위해 소스를 공개합니다
+
+// https://github.com/wookay/swiftcat/blob/master/slide/examples/TShirts.playground/section-1.swift
+
+
 import Cocoa
 import XCPlayground
 
