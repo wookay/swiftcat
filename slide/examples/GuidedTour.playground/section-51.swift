@@ -1,3 +1,3 @@
 var shape = Shape()
-shape.numberOfSides = 7
+shape.numberOfSides = 1
 var shapeDescription = shape.simpleDescription()

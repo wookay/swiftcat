@@ -20,7 +20,7 @@ class EquilateralTriangle: NamedShape {
         return "An equilateral triagle with sides of length \(sideLength)."
     }
 }
-var triangle = EquilateralTriangle(sideLength: 3.1, name: "a triangle")
+var triangle = EquilateralTriangle(sideLength: 2.1, name: "a triasssngle")
 triangle.perimeter
-triangle.perimeter = 9.9
+triangle.perimeter = 1
 triangle.sideLength

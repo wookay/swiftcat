@@ -12,7 +12,7 @@ class DataSource: NSObject, UITableViewDataSource {
         let style = UITableViewCellStyle.fromRaw(row)
         let cell = UITableViewCell(style: style ? style! : .Default, reuseIdentifier: nil)
         
-        cell.textLabel.text = "Text"
+        cell.textLabel.text = "값"
         
         if let detailTextLabel = cell.detailTextLabel {
             detailTextLabel.text = "Detail  Text"

@@ -15,9 +15,9 @@
 
 @implementation ViewController
 
-//-(id) debugQuickLookObject {
-//    return self.view.subviews.firstObject;
-//}
+-(id) debugQuickLookObject {
+    return self.view.subviews.firstObject;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,6 +1,6 @@
 // Playground - noun: a place where people can play
 
-import Cocoa
+import UIKit
 
 var str = "안녕 세미"
 let color = NSColor.blueColor()

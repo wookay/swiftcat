@@ -279,7 +279,7 @@ func CGPathFromNSBezierPath(nsPath:NSBezierPath)->CGPath! {
     }
     
     return CGPathCreateCopy(path)
-    
+     
 }
 
 let view=PlaygroundIconView()
