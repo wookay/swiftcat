@@ -1,7 +1,5 @@
 // 코멘트
 
-import Cocoa
-
 struct Customer {
     var 현금 : Int
     var 적립포인트 : Int
