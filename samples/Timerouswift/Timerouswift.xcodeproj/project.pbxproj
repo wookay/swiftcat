@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BFEDA93197FA7DA0028CF9B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFEDA92197FA7DA0028CF9B /* main.swift */; };
+		2BFEDA95197FA7DA0028CF9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFEDA94197FA7DA0028CF9B /* AppDelegate.swift */; };
+		2BFEDA97197FA7DA0028CF9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BFEDA96197FA7DA0028CF9B /* Images.xcassets */; };
+		2BFEDA9A197FA7DA0028CF9B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BFEDA98197FA7DA0028CF9B /* MainMenu.xib */; };
+		2BFEDAA6197FA7DB0028CF9B /* TimerouswiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFEDAA5197FA7DB0028CF9B /* TimerouswiftTests.swift */; };
+		2BFEDAB1197FA80C0028CF9B /* StopWatch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BFEDAAF197FA80C0028CF9B /* StopWatch.xib */; };
+		2BFEDAB3197FA8330028CF9B /* StopWatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFEDAB2197FA8330028CF9B /* StopWatchController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BFEDAA0197FA7DB0028CF9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BFEDA85197FA7DA0028CF9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BFEDA8C197FA7DA0028CF9B;
+			remoteInfo = Timerouswift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BFEDA8D197FA7DA0028CF9B /* Timerouswift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timerouswift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BFEDA91197FA7DA0028CF9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BFEDA92197FA7DA0028CF9B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2BFEDA94197FA7DA0028CF9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2BFEDA96197FA7DA0028CF9B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2BFEDA99197FA7DA0028CF9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2BFEDA9F197FA7DA0028CF9B /* TimerouswiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerouswiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BFEDAA4197FA7DB0028CF9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BFEDAA5197FA7DB0028CF9B /* TimerouswiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerouswiftTests.swift; sourceTree = "<group>"; };
+		2BFEDAB0197FA80C0028CF9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StopWatch.xib; sourceTree = "<group>"; };
+		2BFEDAB2197FA8330028CF9B /* StopWatchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchController.swift; sourceTree = "<group>"; };
+		2BFEDAB4197FB6460028CF9B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BFEDA8A197FA7DA0028CF9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BFEDA9C197FA7DA0028CF9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BFEDA84197FA7DA0028CF9B = {
+			isa = PBXGroup;
+			children = (
+				2BFEDAB4197FB6460028CF9B /* README.md */,
+				2BFEDA8F197FA7DA0028CF9B /* Timerouswift */,
+				2BFEDAA2197FA7DB0028CF9B /* TimerouswiftTests */,
+				2BFEDA8E197FA7DA0028CF9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BFEDA8E197FA7DA0028CF9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BFEDA8D197FA7DA0028CF9B /* Timerouswift.app */,
+				2BFEDA9F197FA7DA0028CF9B /* TimerouswiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BFEDA8F197FA7DA0028CF9B /* Timerouswift */ = {
+			isa = PBXGroup;
+			children = (
+				2BFEDA94197FA7DA0028CF9B /* AppDelegate.swift */,
+				2BFEDAB2197FA8330028CF9B /* StopWatchController.swift */,
+				2BFEDA96197FA7DA0028CF9B /* Images.xcassets */,
+				2BFEDA98197FA7DA0028CF9B /* MainMenu.xib */,
+				2BFEDAAF197FA80C0028CF9B /* StopWatch.xib */,
+				2BFEDA90197FA7DA0028CF9B /* Supporting Files */,
+			);
+			path = Timerouswift;
+			sourceTree = "<group>";
+		};
+		2BFEDA90197FA7DA0028CF9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BFEDA91197FA7DA0028CF9B /* Info.plist */,
+				2BFEDA92197FA7DA0028CF9B /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BFEDAA2197FA7DB0028CF9B /* TimerouswiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BFEDAA5197FA7DB0028CF9B /* TimerouswiftTests.swift */,
+				2BFEDAA3197FA7DB0028CF9B /* Supporting Files */,
+			);
+			path = TimerouswiftTests;
+			sourceTree = "<group>";
+		};
+		2BFEDAA3197FA7DB0028CF9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BFEDAA4197FA7DB0028CF9B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BFEDA8C197FA7DA0028CF9B /* Timerouswift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BFEDAA9197FA7DB0028CF9B /* Build configuration list for PBXNativeTarget "Timerouswift" */;
+			buildPhases = (
+				2BFEDA89197FA7DA0028CF9B /* Sources */,
+				2BFEDA8A197FA7DA0028CF9B /* Frameworks */,
+				2BFEDA8B197FA7DA0028CF9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Timerouswift;
+			productName = Timerouswift;
+			productReference = 2BFEDA8D197FA7DA0028CF9B /* Timerouswift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BFEDA9E197FA7DA0028CF9B /* TimerouswiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BFEDAAC197FA7DB0028CF9B /* Build configuration list for PBXNativeTarget "TimerouswiftTests" */;
+			buildPhases = (
+				2BFEDA9B197FA7DA0028CF9B /* Sources */,
+				2BFEDA9C197FA7DA0028CF9B /* Frameworks */,
+				2BFEDA9D197FA7DA0028CF9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BFEDAA1197FA7DB0028CF9B /* PBXTargetDependency */,
+			);
+			name = TimerouswiftTests;
+			productName = TimerouswiftTests;
+			productReference = 2BFEDA9F197FA7DA0028CF9B /* TimerouswiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BFEDA85197FA7DA0028CF9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = factorcat;
+				TargetAttributes = {
+					2BFEDA8C197FA7DA0028CF9B = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					2BFEDA9E197FA7DA0028CF9B = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 2BFEDA8C197FA7DA0028CF9B;
+					};
+				};
+			};
+			buildConfigurationList = 2BFEDA88197FA7DA0028CF9B /* Build configuration list for PBXProject "Timerouswift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BFEDA84197FA7DA0028CF9B;
+			productRefGroup = 2BFEDA8E197FA7DA0028CF9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BFEDA8C197FA7DA0028CF9B /* Timerouswift */,
+				2BFEDA9E197FA7DA0028CF9B /* TimerouswiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BFEDA8B197FA7DA0028CF9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BFEDA97197FA7DA0028CF9B /* Images.xcassets in Resources */,
+				2BFEDAB1197FA80C0028CF9B /* StopWatch.xib in Resources */,
+				2BFEDA9A197FA7DA0028CF9B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BFEDA9D197FA7DA0028CF9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BFEDA89197FA7DA0028CF9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BFEDA95197FA7DA0028CF9B /* AppDelegate.swift in Sources */,
+				2BFEDAB3197FA8330028CF9B /* StopWatchController.swift in Sources */,
+				2BFEDA93197FA7DA0028CF9B /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BFEDA9B197FA7DA0028CF9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BFEDAA6197FA7DB0028CF9B /* TimerouswiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BFEDAA1197FA7DB0028CF9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BFEDA8C197FA7DA0028CF9B /* Timerouswift */;
+			targetProxy = 2BFEDAA0197FA7DB0028CF9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BFEDA98197FA7DA0028CF9B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BFEDA99197FA7DA0028CF9B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		2BFEDAAF197FA80C0028CF9B /* StopWatch.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BFEDAB0197FA80C0028CF9B /* Base */,
+			);
+			name = StopWatch.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BFEDAA7197FA7DB0028CF9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2BFEDAA8197FA7DB0028CF9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2BFEDAAA197FA7DB0028CF9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Timerouswift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2BFEDAAB197FA7DB0028CF9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Timerouswift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2BFEDAAD197FA7DB0028CF9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Timerouswift.app/Contents/MacOS/Timerouswift";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TimerouswiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		2BFEDAAE197FA7DB0028CF9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Timerouswift.app/Contents/MacOS/Timerouswift";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TimerouswiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BFEDA88197FA7DA0028CF9B /* Build configuration list for PBXProject "Timerouswift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BFEDAA7197FA7DB0028CF9B /* Debug */,
+				2BFEDAA8197FA7DB0028CF9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BFEDAA9197FA7DB0028CF9B /* Build configuration list for PBXNativeTarget "Timerouswift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BFEDAAA197FA7DB0028CF9B /* Debug */,
+				2BFEDAAB197FA7DB0028CF9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2BFEDAAC197FA7DB0028CF9B /* Build configuration list for PBXNativeTarget "TimerouswiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BFEDAAD197FA7DB0028CF9B /* Debug */,
+				2BFEDAAE197FA7DB0028CF9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BFEDA85197FA7DA0028CF9B /* Project object */;
+}
