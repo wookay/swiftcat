@@ -10,7 +10,7 @@ import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    var viewController = StopWatchController(windowNibName: "StopWatch")
+    var viewController = TimerController(windowNibName: "Timer")
     
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         viewController.showWindow(self)

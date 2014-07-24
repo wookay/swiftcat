@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B7014FA1980A5D6000CF5CD /* d3_legendary_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2B7014F91980A5D6000CF5CD /* d3_legendary_sound.wav */; };
+		2B7015111980C816000CF5CD /* Timer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B7015101980C816000CF5CD /* Timer.xib */; };
+		2B7015131980C8D0000CF5CD /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7015121980C8D0000CF5CD /* TimerController.swift */; };
+		2B70151519810030000CF5CD /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B70151419810030000CF5CD /* Timer.swift */; };
+		2BD11EC6198086FD0041FBA8 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD11EC5198086FD0041FBA8 /* AudioPlayer.swift */; };
 		2BFEDA93197FA7DA0028CF9B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFEDA92197FA7DA0028CF9B /* main.swift */; };
 		2BFEDA95197FA7DA0028CF9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFEDA94197FA7DA0028CF9B /* AppDelegate.swift */; };
 		2BFEDA97197FA7DA0028CF9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BFEDA96197FA7DA0028CF9B /* Images.xcassets */; };
 		2BFEDA9A197FA7DA0028CF9B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BFEDA98197FA7DA0028CF9B /* MainMenu.xib */; };
 		2BFEDAA6197FA7DB0028CF9B /* TimerouswiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFEDAA5197FA7DB0028CF9B /* TimerouswiftTests.swift */; };
-		2BFEDAB1197FA80C0028CF9B /* StopWatch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BFEDAAF197FA80C0028CF9B /* StopWatch.xib */; };
-		2BFEDAB3197FA8330028CF9B /* StopWatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFEDAB2197FA8330028CF9B /* StopWatchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B7014F91980A5D6000CF5CD /* d3_legendary_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d3_legendary_sound.wav; sourceTree = "<group>"; };
+		2B7015101980C816000CF5CD /* Timer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Timer.xib; sourceTree = "<group>"; };
+		2B7015121980C8D0000CF5CD /* TimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		2B70151419810030000CF5CD /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		2BD11EC5198086FD0041FBA8 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		2BFEDA8D197FA7DA0028CF9B /* Timerouswift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timerouswift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFEDA91197FA7DA0028CF9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BFEDA92197FA7DA0028CF9B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -36,8 +44,6 @@
 		2BFEDA9F197FA7DA0028CF9B /* TimerouswiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerouswiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFEDAA4197FA7DB0028CF9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BFEDAA5197FA7DB0028CF9B /* TimerouswiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerouswiftTests.swift; sourceTree = "<group>"; };
-		2BFEDAB0197FA80C0028CF9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StopWatch.xib; sourceTree = "<group>"; };
-		2BFEDAB2197FA8330028CF9B /* StopWatchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchController.swift; sourceTree = "<group>"; };
 		2BFEDAB4197FB6460028CF9B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,11 +65,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BD11EC819808A670041FBA8 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				2B7014F91980A5D6000CF5CD /* d3_legendary_sound.wav */,
+			);
+			name = assets;
+			path = Timerouswift/assets;
+			sourceTree = "<group>";
+		};
 		2BFEDA84197FA7DA0028CF9B = {
 			isa = PBXGroup;
 			children = (
 				2BFEDAB4197FB6460028CF9B /* README.md */,
 				2BFEDA8F197FA7DA0028CF9B /* Timerouswift */,
+				2BD11EC819808A670041FBA8 /* assets */,
 				2BFEDAA2197FA7DB0028CF9B /* TimerouswiftTests */,
 				2BFEDA8E197FA7DA0028CF9B /* Products */,
 			);
@@ -81,11 +97,13 @@
 		2BFEDA8F197FA7DA0028CF9B /* Timerouswift */ = {
 			isa = PBXGroup;
 			children = (
+				2B70151419810030000CF5CD /* Timer.swift */,
+				2B7015121980C8D0000CF5CD /* TimerController.swift */,
 				2BFEDA94197FA7DA0028CF9B /* AppDelegate.swift */,
-				2BFEDAB2197FA8330028CF9B /* StopWatchController.swift */,
+				2BD11EC5198086FD0041FBA8 /* AudioPlayer.swift */,
 				2BFEDA96197FA7DA0028CF9B /* Images.xcassets */,
 				2BFEDA98197FA7DA0028CF9B /* MainMenu.xib */,
-				2BFEDAAF197FA80C0028CF9B /* StopWatch.xib */,
+				2B7015101980C816000CF5CD /* Timer.xib */,
 				2BFEDA90197FA7DA0028CF9B /* Supporting Files */,
 			);
 			path = Timerouswift;
@@ -198,8 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BFEDA97197FA7DA0028CF9B /* Images.xcassets in Resources */,
-				2BFEDAB1197FA80C0028CF9B /* StopWatch.xib in Resources */,
+				2B7015111980C816000CF5CD /* Timer.xib in Resources */,
 				2BFEDA9A197FA7DA0028CF9B /* MainMenu.xib in Resources */,
+				2B7014FA1980A5D6000CF5CD /* d3_legendary_sound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +237,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BFEDA95197FA7DA0028CF9B /* AppDelegate.swift in Sources */,
-				2BFEDAB3197FA8330028CF9B /* StopWatchController.swift in Sources */,
+				2B7015131980C8D0000CF5CD /* TimerController.swift in Sources */,
+				2B70151519810030000CF5CD /* Timer.swift in Sources */,
 				2BFEDA93197FA7DA0028CF9B /* main.swift in Sources */,
+				2BD11EC6198086FD0041FBA8 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,14 +269,6 @@
 				2BFEDA99197FA7DA0028CF9B /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		2BFEDAAF197FA80C0028CF9B /* StopWatch.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2BFEDAB0197FA80C0028CF9B /* Base */,
-			);
-			name = StopWatch.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -415,6 +428,7 @@
 				2BFEDAAB197FA7DB0028CF9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BFEDAAC197FA7DB0028CF9B /* Build configuration list for PBXNativeTarget "TimerouswiftTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +437,7 @@
 				2BFEDAAE197FA7DB0028CF9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

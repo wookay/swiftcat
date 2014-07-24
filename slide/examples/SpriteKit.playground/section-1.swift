@@ -11,7 +11,7 @@ import Cocoa
 import SpriteKit
 import XCPlayground
 
-var textures = Array(0..6).map { SKTexture(imageNamed: "horse-run-0\($0)") }
+var textures = Array(0...6).map { SKTexture(imageNamed: "horse-run-0\($0)") }
 
 let sprite = SKSpriteNode(imageNamed: "horse")
 sprite.position = CGPoint(x: 80, y: 80)
