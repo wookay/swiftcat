@@ -7,6 +7,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="TimerController" customModule="Timerouswift" customModuleProvider="target">
             <connections>
                 <outlet property="display" destination="5Um-FX-j6H" id="Ioz-o8-eTI"/>
+                <outlet property="finishedAt" destination="esn-w7-sN8" id="OFA-0B-h59"/>
                 <outlet property="fiveMinutesButton" destination="gNz-VU-Pw6" id="Hoh-mT-h0D"/>
                 <outlet property="oneMinutesMoreButton" destination="LCi-aY-BpX" id="YdZ-fR-WcC"/>
                 <outlet property="oneSecondsMoreButton" destination="eqq-Vh-xbk" id="JKF-lM-70x"/>
@@ -19,8 +20,8 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application"/>
-        <window title="Timer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+        <window title="Timerouswift" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="374" height="160"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
@@ -38,7 +39,7 @@
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pv4-Cc-Txy">
                         <rect key="frame" x="6" y="35" width="70" height="25"/>
-                        <buttonCell key="cell" type="roundTextured" title="7분" bezelStyle="texturedRounded" image="E2B27D5A-3A86-4F27-89F2-56CC8A06C067" imagePosition="right" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Rsh-ef-NKy">
+                        <buttonCell key="cell" type="roundTextured" title="7분" bezelStyle="texturedRounded" image="D5E9E308-5212-4F64-AEA6-BDCE62542055" imagePosition="right" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Rsh-ef-NKy">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -48,7 +49,7 @@
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VrO-SK-bCW">
                         <rect key="frame" x="298" y="5" width="70" height="25"/>
-                        <buttonCell key="cell" type="roundTextured" title="그만" bezelStyle="texturedRounded" image="E2B27D5A-3A86-4F27-89F2-56CC8A06C067" imagePosition="right" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oXg-9c-iJY">
+                        <buttonCell key="cell" type="roundTextured" title="그만" bezelStyle="texturedRounded" image="D5E9E308-5212-4F64-AEA6-BDCE62542055" imagePosition="right" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oXg-9c-iJY">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" size="13" name="AppleSDGothicNeo-Regular"/>
                         </buttonCell>
@@ -58,7 +59,7 @@
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcD-Vo-W8c">
                         <rect key="frame" x="216" y="5" width="70" height="25"/>
-                        <buttonCell key="cell" type="roundTextured" title="시작" bezelStyle="texturedRounded" image="F247E2FE-CD7E-4841-9EBA-425BE7B79694" imagePosition="right" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DZZ-DL-ZFM">
+                        <buttonCell key="cell" type="roundTextured" title="시작" bezelStyle="texturedRounded" image="D60F2690-23D5-42FD-A8FA-1F99B045A142" imagePosition="right" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DZZ-DL-ZFM">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" size="13" name="AppleSDGothicNeo-Regular"/>
                         </buttonCell>
@@ -68,7 +69,7 @@
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gNz-VU-Pw6">
                         <rect key="frame" x="84" y="35" width="70" height="25"/>
-                        <buttonCell key="cell" type="roundTextured" title="5분" bezelStyle="texturedRounded" image="E2B27D5A-3A86-4F27-89F2-56CC8A06C067" imagePosition="right" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Z9b-3L-zHY">
+                        <buttonCell key="cell" type="roundTextured" title="5분" bezelStyle="texturedRounded" image="D5E9E308-5212-4F64-AEA6-BDCE62542055" imagePosition="right" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Z9b-3L-zHY">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -78,7 +79,7 @@
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LCi-aY-BpX">
                         <rect key="frame" x="6" y="5" width="70" height="25"/>
-                        <buttonCell key="cell" type="roundTextured" title="+1분" bezelStyle="texturedRounded" image="E2B27D5A-3A86-4F27-89F2-56CC8A06C067" imagePosition="right" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ktF-MM-W9W">
+                        <buttonCell key="cell" type="roundTextured" title="+1분" bezelStyle="texturedRounded" image="D5E9E308-5212-4F64-AEA6-BDCE62542055" imagePosition="right" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ktF-MM-W9W">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -88,7 +89,7 @@
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hNM-cw-yQ8">
                         <rect key="frame" x="298" y="35" width="70" height="25"/>
-                        <buttonCell key="cell" type="roundTextured" title="일시정지" bezelStyle="texturedRounded" image="E2B27D5A-3A86-4F27-89F2-56CC8A06C067" imagePosition="right" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FZR-s4-ZJ4">
+                        <buttonCell key="cell" type="roundTextured" title="일시정지" bezelStyle="texturedRounded" image="D5E9E308-5212-4F64-AEA6-BDCE62542055" imagePosition="right" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FZR-s4-ZJ4">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" size="13" name="AppleSDGothicNeo-Regular"/>
                         </buttonCell>
@@ -98,7 +99,7 @@
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqq-Vh-xbk">
                         <rect key="frame" x="84" y="4" width="70" height="25"/>
-                        <buttonCell key="cell" type="roundTextured" title="+1초" bezelStyle="texturedRounded" image="1C224D5D-D02B-498B-87D8-7BB72FAC2D19" imagePosition="right" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mko-M5-lzW">
+                        <buttonCell key="cell" type="roundTextured" title="+1초" bezelStyle="texturedRounded" image="A097A0B0-C709-49DF-A7B3-0834EB12F8F0" imagePosition="right" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mko-M5-lzW">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -106,13 +107,22 @@
                             <action selector="oneSecondsMoreButtonClicked:" target="-2" id="TFz-s2-rLv"/>
                         </connections>
                     </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esn-w7-sN8">
+                        <rect key="frame" x="296" y="138" width="76" height="23"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="00:00" id="cQh-pp-DA7">
+                            <font key="font" size="12" name="Verdana"/>
+                            <color key="textColor" red="0.43364272303071588" green="0.5" blue="0.48408588123111285" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
             </view>
             <point key="canvasLocation" x="24" y="74"/>
         </window>
+        <userDefaultsController representsSharedInstance="YES" id="k5e-4S-6hy"/>
     </objects>
     <resources>
-        <image name="1C224D5D-D02B-498B-87D8-7BB72FAC2D19" width="1" height="1">
+        <image name="A097A0B0-C709-49DF-A7B3-0834EB12F8F0" width="1" height="1">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -163,7 +173,7 @@ qgmvCbcJugm/Cc4J0gnZCeEJ7gnzCfUJ9wn8CgQKBwoMChQKFwopCiwKMQAAAAAAAAIBAAAAAAAAAEIA
 AAAAAAAAAAAAAAAAAAozA
 </mutableData>
         </image>
-        <image name="E2B27D5A-3A86-4F27-89F2-56CC8A06C067" width="1" height="1">
+        <image name="D5E9E308-5212-4F64-AEA6-BDCE62542055" width="1" height="1">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -214,7 +224,7 @@ qgmvCbcJugm/Cc4J0gnZCeEJ7gnzCfUJ9wn8CgQKBwoMChQKFwopCiwKMQAAAAAAAAIBAAAAAAAAAEIA
 AAAAAAAAAAAAAAAAAAozA
 </mutableData>
         </image>
-        <image name="F247E2FE-CD7E-4841-9EBA-425BE7B79694" width="1" height="1">
+        <image name="D60F2690-23D5-42FD-A8FA-1F99B045A142" width="1" height="1">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

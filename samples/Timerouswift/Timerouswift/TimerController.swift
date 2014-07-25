@@ -16,9 +16,11 @@ class TimerController: NSWindowController, TimerDelegate {
     @IBOutlet var startButton: NSButton
     @IBOutlet var stopButton: NSButton
     @IBOutlet var pauseButton : NSButton
+    @IBOutlet var finishedAt : NSTextField
     @IBOutlet var display: NSTextField
-
+    
     var timer : Timer = Timer()
+    var formatter : NSDateFormatter = NSDateFormatter()
     
     func TimerUpdateTicks()  {
         updateDisplay()
@@ -32,6 +34,7 @@ class TimerController: NSWindowController, TimerDelegate {
     
     func TimerBeep() {
         display.backgroundColor = NSColor.redColor()
+        NSApplication.sharedApplication().activateIgnoringOtherApps(true)
     }
     
     func displayInit() {
@@ -47,6 +50,7 @@ class TimerController: NSWindowController, TimerDelegate {
         let seconds : Int = ti % 60
         let minutes : Int = (ti / 60) % 60
         display.stringValue = NSString(format:"%u:%02u", minutes, seconds)
+        finishedAt.stringValue = formatter.stringFromDate(NSDate(timeIntervalSinceNow: timer.remain))
     }
     
     override func windowDidLoad() {
@@ -54,6 +58,7 @@ class TimerController: NSWindowController, TimerDelegate {
         pauseButton.enabled = false
         stopButton.enabled = false
         defaultAction()
+        formatter.dateFormat = "H:mm"
     }
     
     @IBAction func sevenMinutesButtonClicked(sender : AnyObject) {

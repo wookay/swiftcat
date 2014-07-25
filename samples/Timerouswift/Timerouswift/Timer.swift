@@ -43,7 +43,6 @@ class Timer: NSObject {
 
     func start() -> Bool {
         if remain > 0 {
-            println("start")
             beep = true
             if !tick {
                 tick = NSTimer.scheduledTimerWithTimeInterval(1, target: self,
@@ -57,11 +56,9 @@ class Timer: NSObject {
     }
     
     func updateTicks() {
-        print(".")
         if (1 < remain) {
             remain -= 1
         } else {
-            println("---")
             if beep {
                 beep = false
                 audioPlayer.play()
