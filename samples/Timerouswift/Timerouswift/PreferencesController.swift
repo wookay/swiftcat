@@ -21,6 +21,8 @@ class PreferencesController : NSWindowController {
     }
     
     override func windowDidLoad() {
+        volumeSlider.minValue = 0.0
+        volumeSlider.maxValue = 1.0
         volumeSlider.floatValue = NSUserDefaults.standardUserDefaults().floatForKey("Volume")
     }
     
