@@ -113,4 +113,5 @@ class TimerController: NSWindowController, TimerDelegate {
         }
         timer.pause()
     }
+
 }

@@ -10,10 +10,19 @@ import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    var viewController = TimerController(windowNibName: "Timer")
+    var timerController = TimerController(windowNibName: "Timer")
+    var preferencesController = PreferencesController(windowNibName: "Preferences")
     
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
-        viewController.showWindow(self)
+        
+        NSUserDefaults.standardUserDefaults().registerDefaults(["Volume": 0.5])
+        
+        timerController.showWindow(self)
+    }
+    
+    @IBAction func preferencesMenuClicked(sender : AnyObject) {
+        preferencesController.timerController = timerController
+        preferencesController.showWindow(self)
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication!) -> Bool {
@@ -22,6 +31,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationWillTerminate(aNotification: NSNotification?) {
     }
-    
+        
 }
 

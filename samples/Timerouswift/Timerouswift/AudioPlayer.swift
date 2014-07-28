@@ -17,6 +17,7 @@ class AudioPlayer {
         let path = NSBundle.mainBundle().pathForResource("d3_legendary_sound", ofType: "wav")
         let url = NSURL(fileURLWithPath: path)
         player = AVAudioPlayer(contentsOfURL: url, error:nil)
+        player.volume = NSUserDefaults.standardUserDefaults().floatForKey("Volume")
         player.prepareToPlay()
     }
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5D45D619865437007E8D5D /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5D45D519865437007E8D5D /* Preferences.xib */; };
+		2B5D45D81986544C007E8D5D /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5D45D71986544C007E8D5D /* PreferencesController.swift */; };
 		2B7014FA1980A5D6000CF5CD /* d3_legendary_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2B7014F91980A5D6000CF5CD /* d3_legendary_sound.wav */; };
 		2B7015111980C816000CF5CD /* Timer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B7015101980C816000CF5CD /* Timer.xib */; };
 		2B7015131980C8D0000CF5CD /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7015121980C8D0000CF5CD /* TimerController.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B5D45D519865437007E8D5D /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		2B5D45D71986544C007E8D5D /* PreferencesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
 		2B7014F91980A5D6000CF5CD /* d3_legendary_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d3_legendary_sound.wav; sourceTree = "<group>"; };
 		2B7015101980C816000CF5CD /* Timer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Timer.xib; sourceTree = "<group>"; };
 		2B7015121980C8D0000CF5CD /* TimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
@@ -99,11 +103,13 @@
 			children = (
 				2B70151419810030000CF5CD /* Timer.swift */,
 				2B7015121980C8D0000CF5CD /* TimerController.swift */,
+				2B5D45D71986544C007E8D5D /* PreferencesController.swift */,
 				2BFEDA94197FA7DA0028CF9B /* AppDelegate.swift */,
 				2BD11EC5198086FD0041FBA8 /* AudioPlayer.swift */,
 				2BFEDA96197FA7DA0028CF9B /* Images.xcassets */,
 				2BFEDA98197FA7DA0028CF9B /* MainMenu.xib */,
 				2B7015101980C816000CF5CD /* Timer.xib */,
+				2B5D45D519865437007E8D5D /* Preferences.xib */,
 				2BFEDA90197FA7DA0028CF9B /* Supporting Files */,
 			);
 			path = Timerouswift;
@@ -184,6 +190,7 @@
 				TargetAttributes = {
 					2BFEDA8C197FA7DA0028CF9B = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = U2KBENECEZ;
 					};
 					2BFEDA9E197FA7DA0028CF9B = {
 						CreatedOnToolsVersion = 6.0;
@@ -219,6 +226,7 @@
 				2B7015111980C816000CF5CD /* Timer.xib in Resources */,
 				2BFEDA9A197FA7DA0028CF9B /* MainMenu.xib in Resources */,
 				2B7014FA1980A5D6000CF5CD /* d3_legendary_sound.wav in Resources */,
+				2B5D45D619865437007E8D5D /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5D45D81986544C007E8D5D /* PreferencesController.swift in Sources */,
 				2BFEDA95197FA7DA0028CF9B /* AppDelegate.swift in Sources */,
 				2B7015131980C8D0000CF5CD /* TimerController.swift in Sources */,
 				2B70151519810030000CF5CD /* Timer.swift in Sources */,
@@ -355,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Timerouswift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -366,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Timerouswift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
