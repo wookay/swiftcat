@@ -21,6 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @IBAction func preferencesMenuClicked(sender : AnyObject) {
+        preferencesController = PreferencesController(windowNibName: "Preferences")
         preferencesController.timerController = timerController
         preferencesController.showWindow(self)
     }
