@@ -8,14 +8,21 @@
 
 import Cocoa
 
+
+        
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     var timerController = TimerController(windowNibName: "Timer")
     var preferencesController = PreferencesController(windowNibName: "Preferences")
     
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
-        
-        NSUserDefaults.standardUserDefaults().registerDefaults(["Volume": 0.5])
+//        NSUserDefaults.resetStandardUserDefaults()        
+//        NSUserDefaults.standardUserDefaults().removeObjectForKey("Volume")
+//        NSUserDefaults.standardUserDefaults().removeObjectForKey("First")
+//        NSUserDefaults.standardUserDefaults().removeObjectForKey("Second")
+        NSUserDefaults.standardUserDefaults().registerDefaults([
+            "First": 7, "Second": 5, "Volume": 0.5,
+        ])
         
         timerController.showWindow(self)
     }
@@ -34,4 +41,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
         
 }
-

@@ -9,8 +9,8 @@
 import Cocoa
 
 class TimerController: NSWindowController, TimerDelegate {
-    @IBOutlet var sevenMinutesButton: NSButton
-    @IBOutlet var fiveMinutesButton: NSButton
+    @IBOutlet var firstButton: NSButton
+    @IBOutlet var secondButton: NSButton
     @IBOutlet var oneMinutesMoreButton : NSButton
     @IBOutlet var oneSecondsMoreButton : NSButton
     @IBOutlet var startButton: NSButton
@@ -42,7 +42,7 @@ class TimerController: NSWindowController, TimerDelegate {
     }
     
     func defaultAction() {
-        fiveMinutesButtonClicked(0)
+        secondButtonClicked(0)
     }
     
     func updateDisplay() {
@@ -55,20 +55,22 @@ class TimerController: NSWindowController, TimerDelegate {
     
     override func windowDidLoad() {
         timer.delegate = self
+        firstButton.title = NSString(format: "%d분", NSUserDefaults.standardUserDefaults().integerForKey("First"))
+        secondButton.title = NSString(format: "%d분", NSUserDefaults.standardUserDefaults().integerForKey("Second"))
         pauseButton.enabled = false
         stopButton.enabled = false
         defaultAction()
         formatter.dateFormat = "H:mm"
     }
     
-    @IBAction func sevenMinutesButtonClicked(sender : AnyObject) {
-        timer.remain = 60 * 7
+    @IBAction func firstButtonClicked(sender : AnyObject) {
+        timer.remain = NSTimeInterval(60 * NSUserDefaults.standardUserDefaults().integerForKey("First"))
         updateDisplay()
         displayInit()
     }
 
-    @IBAction func fiveMinutesButtonClicked(sender : AnyObject) {
-        timer.remain = 60 * 5
+    @IBAction func secondButtonClicked(sender : AnyObject) {
+        timer.remain = NSTimeInterval(60 * NSUserDefaults.standardUserDefaults().integerForKey("Second"))
         updateDisplay()
         displayInit()
     }
