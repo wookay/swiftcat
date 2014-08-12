@@ -29,11 +29,11 @@ class Timer: NSObject {
     }
 
     func pause() {
-        if tick {
+        if nil==tick {
+            resume()
+        } else {
             tick?.invalidate()
             tick = nil
-        } else {
-            resume()
         }
     }
 
@@ -44,7 +44,7 @@ class Timer: NSObject {
     func start() -> Bool {
         if remain > 0 {
             beep = true
-            if !tick {
+            if nil==tick {
                 tick = NSTimer.scheduledTimerWithTimeInterval(1, target: self,
                     selector: Selector("updateTicks"),
                     userInfo: nil,

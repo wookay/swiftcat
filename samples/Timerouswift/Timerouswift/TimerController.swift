@@ -108,10 +108,10 @@ class TimerController: NSWindowController, TimerDelegate {
     }
 
     @IBAction func pause(sender : AnyObject) {
-        if timer.tick {
-            pauseButton!.title = "계속"
-        } else {
+        if nil==timer.tick {
             pauseButton!.title = "일시정지"
+        } else {
+            pauseButton!.title = "계속"
         }
         timer.pause()
     }
