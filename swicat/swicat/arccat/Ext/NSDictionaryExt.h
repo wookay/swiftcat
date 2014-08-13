@@ -2,7 +2,7 @@
 //  NSDictionaryExt.h
 //  TestApp
 //
-//  Created by ssukcha on 05/09/13.
+//  Created by WooKyoung Noh on 05/09/13.
 //  Copyright (c) 2013 factorcat. All rights reserved.
 //
 
@@ -16,10 +16,10 @@
 
 
 @interface NSDictionary (CapitalizedExt)
--(NSString*) To_s ;
--(id) Fetch:(id)key ;
--(NSArray*) Keys ;
--(NSArray*) Values ;
+-(NSString*) to_s ;
+-(id) fetch:(id)key ;
+-(NSArray*) keys ;
+-(NSArray*) values ;
 @end
 
 @interface NSMutableDictionary (Ext)

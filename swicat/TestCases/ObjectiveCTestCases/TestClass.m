@@ -2,7 +2,7 @@
 //  TestClass.m
 //  TestApp
 //
-//  Created by ssukcha on 2013. 12. 17..
+//  Created by WooKyoung Noh on 2013. 12. 17..
 //  Copyright (c) 2013년 factorcat. All rights reserved.
 //
 

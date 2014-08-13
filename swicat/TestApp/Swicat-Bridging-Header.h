@@ -1,8 +1,8 @@
 //
-//  TestApp-Bridge.h
+//  Swicat-Bridging-Header.h
 //  TestApp
 //
-//  Created by ssukcha on 7/25/14.
+//  Created by WooKyoung Noh on 7/25/14.
 //  Copyright (c) 2014 factorcat. All rights reserved.
 //
 

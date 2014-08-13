@@ -2,7 +2,7 @@
 //  NSValueExt.m
 //  FindTheWords
 //
-//  Created by wookay on 13. 10. 6..
+//  Created by WooKyoung Noh on 13. 10. 6..
 //  Copyright (c) 2013년 factorcat. All rights reserved.
 //
 
@@ -91,7 +91,7 @@
                 } else if ([obj isKindOfClass:[NSNumber class]]) {
                     return [NSString stringWithFormat:@"@%@", [obj description]];
                 } else if ([obj isKindOfClass:[NSArray class]] || [obj isKindOfClass:[NSDictionary class]]) {
-                    return [obj To_s];
+                    return [obj to_s];
                 } else {
                     return [obj description];
                 }

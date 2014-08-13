@@ -2,7 +2,7 @@
 //  TestString.m
 //  TestApp
 //
-//  Created by ssukcha on 05/09/13.
+//  Created by WooKyoung Noh on 05/09/13.
 //  Copyright (c) 2013 factorcat. All rights reserved.
 //
 
@@ -17,8 +17,8 @@
 @implementation TestString
 
 -(void) test_string {
-    assert_equal(@"a", [@" a " Strip]);
-    assert_equal(@"cba", [@"abc" Reverse]);
+    assert_equal(@"a", [@" a " strip]);
+    assert_equal(@"cba", [@"abc" reverse]);
     assert_equal(@"bc", [@"abc" slice:1 :2]);
     assert_equal(@"abcd", [@"abcff" gsub:@"ff" to:@"d"]);
     assert_equal(3, @"abc".length);
@@ -32,8 +32,8 @@
     assert_equal(3.14, @"3.14".to_double);
     
     NSArray* expected = @[@"a", @"b", @"c"];
-    assert_equal(expected, [@"a b c" Split:@" "]);
-    assert_equal(expected, [@"abc" Each_char]);
+    assert_equal(expected, [@"a b c" split:@" "]);
+    assert_equal(expected, [@"abc" each_char]);
 }
 
 -(void) test_to_s {

@@ -39,7 +39,7 @@
 +(UIViewController*) top {
     id rootVC = self.root;
     if ([rootVC isKindOfClass:UITabBarController.class]) {
-        return [[rootVC viewControllers] First];
+        return [[rootVC viewControllers] first];
     } else if ([rootVC isKindOfClass:UINavigationController.class]) {
         return [rootVC topViewController];
     } else {

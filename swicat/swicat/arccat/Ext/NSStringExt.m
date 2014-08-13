@@ -2,7 +2,7 @@
 //  NSStringExt.m
 //  TestApp
 //
-//  Created by ssukcha on 05/09/13.
+//  Created by WooKyoung Noh on 05/09/13.
 //  Copyright (c) 2013 factorcat. All rights reserved.
 //
 
@@ -22,7 +22,7 @@ NSString* SWF(NSString* format, ...) {
 }
 
 NSArray* _w(NSString* str) {
-    return [[str Strip] componentsSeparatedByString:SPACE];
+    return [[str strip] componentsSeparatedByString:SPACE];
 }
 
 NSString* unichar_to_string(unichar ch) {
@@ -92,10 +92,10 @@ NSString* unichar_to_string(unichar ch) {
 
 
 @implementation NSString (CapitalizedExt)
--(NSString*) To_s {
+-(NSString*) to_s {
     return self;
 }
--(NSArray*) Split:(NSString*)sep {
+-(NSArray*) split:(NSString*)sep {
     if ([Empty isEqualToString:self]) {
         return [NSArray array];
     }
@@ -112,11 +112,11 @@ NSString* unichar_to_string(unichar ch) {
     }
 }
 
--(NSArray*) Each_char {
-	return [self Split:Empty];
+-(NSArray*) each_char {
+	return [self split:Empty];
 }
 
--(NSString*) Ljust:(int)justified {
+-(NSString*) ljust:(int)justified {
     if (self.length < justified) {
         NSString* padStr = SPACE;
         return SWF(@"%@%@", self, [padStr repeat:justified - (int)self.length]);
@@ -126,15 +126,15 @@ NSString* unichar_to_string(unichar ch) {
 }
 
 
--(NSString*) Strip {
+-(NSString*) strip {
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
--(NSString*) Reverse {
-    return [[[self Split:Empty] Reverse] Join:Empty];
+-(NSString*) reverse {
+    return [[[self split:Empty] reverse] join:Empty];
 }
 
--(NSString*) Concat:(NSString*)str {
+-(NSString*) concat:(NSString*)str {
     return [self stringByAppendingString:str];
 }
 

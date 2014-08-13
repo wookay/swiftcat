@@ -2,7 +2,7 @@
 //  NSObjectExt.m
 //  TestApp
 //
-//  Created by ssukcha on 06/09/13.
+//  Created by WooKyoung Noh on 06/09/13.
 //  Copyright (c) 2013 factorcat. All rights reserved.
 //
 
@@ -21,7 +21,7 @@
     return NSStringFromClass([self class]);
 }
 
--(NSArray*) Methods {
+-(NSArray*) methods {
     return [NSClassExt methodsForClass:[self class]];
 }
 
@@ -64,7 +64,7 @@
     }
     NSMutableArray* ret = [NSMutableArray array];
 	for (NSArray* trio in [ary sortedArrayUsingFunction:sortByFirstObjectComparator context:nil]) {
-		[ret addObject:SWF(@"%@ %@ %@", [trio.second Ljust:getterTypeMax], [trio.First Ljust:getterNameMax], trio.third)];
+		[ret addObject:SWF(@"%@ %@ %@", [trio.second ljust:getterTypeMax], [trio.first ljust:getterNameMax], trio.third)];
 	}
 	return ret;
 }
@@ -174,7 +174,7 @@
     }
     NSMutableArray* ret = [NSMutableArray array];
 	for (NSArray* trio in [ary sortedArrayUsingFunction:sortByFirstObjectComparator context:nil]) {
-		[ret addObject:SWF(@"%@ %@ %@", [trio.second Ljust:typeStrMax], [trio.First Ljust:propertyNameMax], trio.third)];
+		[ret addObject:SWF(@"%@ %@ %@", [trio.second ljust:typeStrMax], [trio.first ljust:propertyNameMax], trio.third)];
 	}
 	return ret;
 }

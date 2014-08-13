@@ -2,7 +2,7 @@
 //  NSClassExt.m
 //  TestApp
 //
-//  Created by ssukcha on 06/09/13.
+//  Created by WooKyoung Noh on 06/09/13.
 //  Copyright (c) 2013 factorcat. All rights reserved.
 //
 
@@ -68,7 +68,7 @@ NSString* TypeEncodingDescription(const char* code) {
 			return @"union";
 		case _C_STRUCT_B:
 		case _C_STRUCT_E: {
-            NSString* structStr = [[[[SWF(@"%s", code) gsub:@"{_" to:Empty] gsub:OPENING_BRACE to:Empty] Split:EQUAL] First];
+            NSString* structStr = [[[[SWF(@"%s", code) gsub:@"{_" to:Empty] gsub:OPENING_BRACE to:Empty] split:EQUAL] first];
             if ([QUESTION_MARK isEqualToString:structStr]) {
                 return @"struct";
             } else {
@@ -103,7 +103,7 @@ NSString* TypeEncodingDescription(const char* code) {
 		NSString* selName;
 		if (numberOfArguments > 0) {
 			NSMutableArray* selArray = [NSMutableArray array];
-			NSArray* selArgs = [selectorName Split:COLON];
+			NSArray* selArgs = [selectorName split:COLON];
 			for (unsigned int argIdx = 0; argIdx < numberOfArguments; argIdx++) {
 				NSString* argString = [selArgs objectAtIndex:argIdx];
 				char* argType = method_copyArgumentType(method, argIdx + ARGUMENT_OFFSET);
@@ -118,7 +118,7 @@ NSString* TypeEncodingDescription(const char* code) {
 				}
 				[selArray addObject:SWF(@"%@:(%@)%@", argString, argTypeString, shortArgStr)];
 			}
-			selName = [selArray Join:SPACE];
+			selName = [selArray join:SPACE];
 		} else {
 			selName = selectorName;
 		}
@@ -132,7 +132,7 @@ NSString* TypeEncodingDescription(const char* code) {
 	free(methods);
 	NSMutableArray* ret = [NSMutableArray array];
 	for (NSArray* pair in [ary sortedArrayUsingFunction:sortByFirstObjectComparator context:nil]) {
-		[ret addObject:SWF(@"%@ %@ ;", [[pair second] Ljust:retStrMax], [pair First])];
+		[ret addObject:SWF(@"%@ %@ ;", [[pair second] ljust:retStrMax], [pair first])];
 	}
 	return ret;
 }
@@ -155,7 +155,7 @@ NSString* TypeEncodingDescription(const char* code) {
 	free(properties);
     NSMutableArray* ret = [NSMutableArray array];
 	for (NSArray* pair in [ary sortedArrayUsingFunction:sortByFirstObjectComparator context:nil]) {
-		[ret addObject:SWF(@"%@ %@", [pair.second Ljust:typeStrMax], pair.First)];
+		[ret addObject:SWF(@"%@ %@", [pair.second ljust:typeStrMax], pair.first)];
 	}
 	return ret;
 }

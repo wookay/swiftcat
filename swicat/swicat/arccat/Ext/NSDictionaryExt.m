@@ -2,7 +2,7 @@
 //  NSDictionaryExt.m
 //  TestApp
 //
-//  Created by ssukcha on 05/09/13.
+//  Created by WooKyoung Noh on 05/09/13.
 //  Copyright (c) 2013 factorcat. All rights reserved.
 //
 
@@ -50,30 +50,30 @@
 
 @implementation NSDictionary (CapitalizedExt)
 
--(NSString*) To_s {
+-(NSString*) to_s {
     NSMutableArray* ary = [NSMutableArray array];
-    SEL sel  = @selector(To_s);
+    SEL sel  = @selector(to_s);
     for (id key in [self allKeys]) {
         NSArray* pair;
         id value = [self valueForKey:key];
         if ([value respondsToSelector:sel]) {
-            pair = @[key, [value To_s]];
+            pair = @[key, [value to_s]];
         } else {
             pair = @[key, [value description]];
         }
-        [ary addObject:[pair Join:@": "]];
+        [ary addObject:[pair join:@": "]];
     }
-    return [NSString stringWithFormat:@"{%@}", [ary Join:COMMA_SPACE]];
+    return [NSString stringWithFormat:@"{%@}", [ary join:COMMA_SPACE]];
 }
 
--(id) Fetch:(id)key {
+-(id) fetch:(id)key {
     return [self objectForKey:key];
 }
--(NSArray*) Keys {
+-(NSArray*) keys {
     return [self allKeys];
 }
 
--(NSArray*) Values {
+-(NSArray*) values {
     return [self allValues];
 }
 

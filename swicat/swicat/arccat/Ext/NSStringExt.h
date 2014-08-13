@@ -2,7 +2,7 @@
 //  NSStringExt.h
 //  TestApp
 //
-//  Created by ssukcha on 05/09/13.
+//  Created by WooKyoung Noh on 05/09/13.
 //  Copyright (c) 2013 factorcat. All rights reserved.
 //
 
@@ -74,11 +74,11 @@ NSString* unichar_to_string(unichar ch) ;
 @end
 
 @interface NSString (CapitalizedExt)
--(NSString*) To_s ;
--(NSArray*) Split:(NSString*)sep ;
--(NSArray*) Each_char ;
--(NSString*) Ljust:(int)justified ;
--(NSString*) Strip ;
--(NSString*) Reverse ;
--(NSString*) Concat:(NSString*)str ;
+-(NSString*) to_s ;
+-(NSArray*) split:(NSString*)sep ;
+-(NSArray*) each_char ;
+-(NSString*) ljust:(int)justified ;
+-(NSString*) strip ;
+-(NSString*) reverse ;
+-(NSString*) concat:(NSString*)str ;
 @end

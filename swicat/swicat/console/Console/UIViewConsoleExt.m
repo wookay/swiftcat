@@ -35,7 +35,7 @@
 -(void) traverseSubviews:(TraverseViewBlock)block depth:(int)depth reverse:(BOOL)reverse {
     block(depth, self);
     Class UIWebDocumentViewClass = NSClassFromString(@"UIWebDocumentView");
-    for (UIView* subview in (reverse ? [[self subviews] Reverse] : [self subviews])) {
+    for (UIView* subview in (reverse ? [[self subviews] reverse] : [self subviews])) {
         if ([subview isKindOfClass:UIWebDocumentViewClass]) {
         } else {
             [subview traverseSubviews:block depth:depth+1 reverse:reverse];

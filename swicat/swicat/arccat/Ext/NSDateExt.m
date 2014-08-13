@@ -2,7 +2,7 @@
 //  NSDateExt.m
 //  TestApp
 //
-//  Created by ssukcha on 05/09/13.
+//  Created by WooKyoung Noh on 05/09/13.
 //  Copyright (c) 2013 factorcat. All rights reserved.
 //
 
@@ -83,7 +83,7 @@ NSDate* NSDateFromString(NSString* str) {
 
 @implementation NSDate (CapitalizedExt)
 
--(NSString*) To_s {
+-(NSString*) to_s {
     NSDateFormatter* formatter = [NSDateFormatter new];
     [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     return [formatter stringFromDate:self];

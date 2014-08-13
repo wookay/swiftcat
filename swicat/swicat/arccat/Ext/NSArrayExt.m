@@ -2,7 +2,7 @@
 //  NSArrayExt.m
 //  TestApp
 //
-//  Created by ssukcha on 05/09/13.
+//  Created by WooKyoung Noh on 05/09/13.
 //  Copyright (c) 2013 factorcat. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 
 NSInteger sortByFirstObjectComparator(id uno, id dos, void* context) {
     if ([uno isKindOfClass:NSArray.class]) {
-        return [[uno First] compare:[dos First]];
+        return [[uno first] compare:[dos first]];
     } else if ([uno isKindOfClass:NSString.class]) {
         return [uno compare:dos];
     } else {
@@ -62,33 +62,33 @@ NSInteger sortByFirstObjectComparator(id uno, id dos, void* context) {
 
 
 @implementation NSArray (CapitalizedExt)
--(NSString*) To_s {
+-(NSString*) to_s {
     NSMutableArray* ary = [NSMutableArray array];
     for (id obj in self) {
-        SEL sel  = @selector(To_s);
+        SEL sel  = @selector(to_s);
         if ([obj respondsToSelector:sel]) {
-            [ary addObject:[obj To_s]];
+            [ary addObject:[obj to_s]];
         } else {
             [ary addObject:[obj description]];
         }
     }
-    return [NSString stringWithFormat:@"[%@]", [ary Join:COMMA_SPACE]];
+    return [NSString stringWithFormat:@"[%@]", [ary join:COMMA_SPACE]];
 }
--(NSString*) Join {
+-(NSString*) join {
     return [self componentsJoinedByString:Empty];
 }
--(NSString*) Join:(NSString*)sep {
+-(NSString*) join:(NSString*)sep {
     return [self componentsJoinedByString:sep];
 }
 
--(id) First {
+-(id) first {
     return [self objectAtIndex:0];
 }
 
--(id) Last {
+-(id) last {
     return [self lastObject];
 }
--(NSArray*) Reverse {
+-(NSArray*) reverse {
     return [[self reverseObjectEnumerator] allObjects];
 }
 @end

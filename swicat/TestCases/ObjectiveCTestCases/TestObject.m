@@ -2,7 +2,7 @@
 //  TestObject.m
 //  TestApp
 //
-//  Created by ssukcha on 06/09/13.
+//  Created by WooKyoung Noh on 06/09/13.
 //  Copyright (c) 2013 factorcat. All rights reserved.
 //
 
@@ -17,7 +17,7 @@
 -(void) test_methods {
     assert_equal(@"TestObject", self.className);
     assert_equal(@[@"+(id) class_method:(int)intValue ;"], self.classMethods);
-    assert_equal(@[@"-(void) test_methods ;"], self.Methods);
+    assert_equal(@[@"-(void) test_methods ;"], self.methods);
 }
 
 

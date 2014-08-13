@@ -2,7 +2,7 @@
 //  NSArrayExt.h
 //  TestApp
 //
-//  Created by ssukcha on 05/09/13.
+//  Created by WooKyoung Noh on 05/09/13.
 //  Copyright (c) 2013 factorcat. All rights reserved.
 //
 
@@ -24,12 +24,12 @@ NSInteger sortByFirstObjectComparator(NSArray* uno, NSArray* dos, void* context)
 
 
 @interface NSArray (CapitalizedExt)
--(NSString*) To_s ;
--(NSString*) Join ;
--(NSString*) Join:(NSString*)sep ;
--(id) First ;
--(id) Last ;
--(NSArray*) Reverse ;
+-(NSString*) to_s ;
+-(NSString*) join ;
+-(NSString*) join:(NSString*)sep ;
+-(id) first ;
+-(id) last ;
+-(NSArray*) reverse ;
 @end
 
 
