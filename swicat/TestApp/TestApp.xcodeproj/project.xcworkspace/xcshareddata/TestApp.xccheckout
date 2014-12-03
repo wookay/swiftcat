@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>23EAA80A-9055-4FA2-8BE2-DA036EEE46C8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TestApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C00807E24880C42B1F3DA8A4CEBD74250996FD03</key>
+		<string>github.com:wookay/swiftcat.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>swicat/TestApp/TestApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C00807E24880C42B1F3DA8A4CEBD74250996FD03</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:wookay/swiftcat.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C00807E24880C42B1F3DA8A4CEBD74250996FD03</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C00807E24880C42B1F3DA8A4CEBD74250996FD03</string>
+			<key>IDESourceControlWCCName</key>
+			<string>swiftcat</string>
+		</dict>
+	</array>
+</dict>
+</plist>

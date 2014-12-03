@@ -42,8 +42,14 @@
     }
     for (NSString* targetClassString in targetClasses) {
         Class targetClass = NSClassFromString(targetClassString);
-        id target = [targetClass new];
-        [self runTests:target];
+        if ([targetClass isSubclassOfClass:[NSObject class]]) {
+            id target = [targetClass new];
+            [self runTests:target];
+        } else {
+            print_log_info(@"\n\n*************** Please subclassing *************");
+            print_log_info(@"\n  %@ : NSObject", targetClassString);
+            print_log_info(@"\n\n");
+        }
     }
 }
 

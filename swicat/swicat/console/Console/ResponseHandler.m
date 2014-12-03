@@ -11,12 +11,39 @@
 #import "HTTPDataResponse.h"
 #import "Logger.h"
 #import "Console.h"
+#import "NSArrayExt.h"
+
+@interface NSDictionary (JSON)
+-(NSString*) toJSON ;
+@end
+
+@implementation NSDictionary (JSON)
+-(NSString*) toJSON {
+    NSMutableArray* ary = [NSMutableArray array];
+    for (NSString* key in self) {
+        id value = [self objectForKey:key];
+        [ary addObject:SWF(@"\"%@\":\"%@\"", key, value)];
+    }
+    return SWF(@"{%@}", [ary join:COMMA]);
+}
+@end
+
 
 @interface ImageDataResponse : HTTPDataResponse
 @end
 @implementation ImageDataResponse
 - (NSDictionary*) httpHeaders {
     return @{ @"Content-Type" : @"image/png",
+              @"Connection" : @"close",
+              @"Content-Length" : [NSString stringWithFormat:@"%lu", (unsigned long)[data length]]};
+}
+@end
+
+@interface JSONDataResponse : HTTPDataResponse
+@end
+@implementation JSONDataResponse
+- (NSDictionary*) httpHeaders {
+    return @{ @"Content-Type" : @"application/json",
               @"Connection" : @"close",
               @"Content-Length" : [NSString stringWithFormat:@"%lu", (unsigned long)[data length]]};
 }
@@ -35,6 +62,14 @@
         UIImage* image = [Console.sharedInstance pathToImage:path];
         NSData* data = UIImagePNGRepresentation(image);
         return [[ImageDataResponse alloc] initWithData:data];
+    } else if ([path hasPrefix:SLASH_ZERO_X]) {
+        NSString* address = [path substringFromIndex:1];
+        log_info(@"slash %@", address);
+        NSDictionary* dict = [Console.sharedInstance objectInfo:address];
+        NSString* json = [dict toJSON];
+        NSData* data = [json dataUsingEncoding:NSUTF8StringEncoding];
+        return [[JSONDataResponse alloc] initWithData:data];
+        return nil;
     } else {
         NSString* style = @"pre {font-family: courier; font-size: 15pt;} img {border:1px solid black;}";
         NSString* title = @"arccat Console";

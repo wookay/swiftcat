@@ -22,6 +22,44 @@
 
 #define CONSOLE_SERVER_PORT 8080
 
+@interface UIColor (Ext)
+-(NSString*) sharpHexRGBA ;
+@end
+
+@implementation UIColor (Ext)
+-(NSString*) sharpHexRGBA {
+    const CGFloat *rgb = CGColorGetComponents(self.CGColor);
+    size_t numComponents = CGColorGetNumberOfComponents([self CGColor]);
+    if (2 == numComponents) {
+        float alpha = rgb[1];
+        if (0.0 == alpha) {
+            return NSLocalizedString(@"Transparent", nil);
+        }
+        float red = rgb[0];
+        float green = rgb[0];
+        float blue = rgb[0];
+        int redi = red * 255;
+        int greeni = green * 255;
+        int bluei = blue * 255;
+        NSString* rgba = [NSString stringWithFormat:@"#%02X%02X%02X %.2g", redi, greeni, bluei, alpha];
+        return rgba;
+    } else {
+        float alpha = rgb[3];
+        if (0.0 == alpha) {
+            return NSLocalizedString(@"Transparent", nil);
+        }
+        float red = rgb[0];
+        float green = rgb[1];
+        float blue = rgb[2];
+        int redi = red * 255;
+        int greeni = green * 255;
+        int bluei = blue * 255;
+        NSString* rgba = [NSString stringWithFormat:@"#%02X%02X%02X %.2g", redi, greeni, bluei, alpha];
+        return rgba;
+    }
+}
+@end
+
 
 @interface Console ()
 -(NSString*) localIPAddress ;
@@ -60,7 +98,7 @@
     }
     
     _target = Console.root;
-    _imageStore = [NSMutableDictionary dictionary];
+    _objectStore = [NSMutableDictionary dictionary];
 }
 
 -(NSString*) targetToHTMLResponse {
@@ -70,24 +108,22 @@
     if ([_target isKindOfClass:[UIViewController class]]) {
         UIViewController* vc = _target;
         [vc.view traverseSubviews:^(int depth, UIView* view) {
-            UIImage* image = view.toImage;
-            if (nil != image) {
-                NSString* address = SWF(@"/image/%p.png", view);
-                [_imageStore setObject:image forKey:address];
+            if (nil != view.toImage) {
+                NSString* address = SWF(@"%p", view);
+                [_objectStore setObject:view forKey:address];
                 NSString* viewStr = [view description];
                 [ary addObject:SWF(@"%@%@\n", [TABCHAR repeat:depth], viewStr).escapeHTML];
-                [ary addObject:SWF(@"<img src='%@' title='%@'/>", address, address)];
+                [ary addObject:SWF(@"<img src='%@%@' title='%@'/>", SLASH_IMAGE_SLASH, address, address)];
             }
-//            print_log_info(@"%@%@\n", [SPACE repeat:depth*2], view);
         }];
     }
     [ary addObject:@"<hr/>"];
     UIView* statusBar = [self statusBar];
     if (nil != statusBar) {
-        NSString* address = SWF(@"/image/%p.png", statusBar);
-        [_imageStore setObject:statusBar.toImage forKey:address];
+        NSString* address = SWF(@"%p", statusBar);
+        [_objectStore setObject:statusBar forKey:address];
         [ary addObject:SWF(@"%@", statusBar).escapeHTML];
-        [ary addObject:SWF(@"<img src='%@' title='%@'/>", address, address)];
+        [ary addObject:SWF(@"<img src='%@%@' title='%@'/>", SLASH_IMAGE_SLASH, address, address)];
     }
     for (UIWindow* window in UIApplication.sharedApplication.windows) {
         [ary addObject:SWF(@"%@", window).escapeHTML];
@@ -96,7 +132,23 @@
     [ary addObject:@"</pre>"];
     return [ary componentsJoinedByString:@"\n"];
 }
-         
+
+-(NSDictionary*) objectInfo:(NSString*)address {
+    UIView* view = [_objectStore objectForKey:address];
+    if (nil == view) {
+        return @{};
+    } else {
+        NSMutableDictionary* dict = [NSMutableDictionary dictionary];
+        [dict setObject:view.description forKey:@"description"];
+        if ([view respondsToSelector:@selector(backgroundColor)]) {
+            if (nil != view.backgroundColor) {
+                [dict setObject:view.backgroundColor.description forKey:@"bakgroundColor"];
+            }
+        }
+        return dict;
+    }
+}
+
 +(void) run {
     [[self sharedInstance] startServer:CONSOLE_SERVER_PORT];
 }
@@ -131,7 +183,9 @@
         if ([SLASH_IMAGE_SLASH_CAPTURE isEqualToString:path]) {
             return [self captureImage];
         } else {
-            return [_imageStore objectForKey:path];
+            NSString* address = [path substringWithRange:NSMakeRange(SLASH_IMAGE_SLASH_LENGTH, ADDRESS_LENGTH)];
+            UIView* view = [_objectStore objectForKey:address];
+            return view.toImage;
         }
     }
     return nil;
@@ -197,7 +251,7 @@
     self = [super init];
     if (self) {
         _target = nil;
-        _imageStore = nil;
+        _objectStore = nil;
         _httpServer = nil;
     }
     return self;

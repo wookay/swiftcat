@@ -11,9 +11,11 @@
 #define SLASH_IMAGE_SLASH           @"/image/"
 #define SLASH_IMAGE_SLASH_LENGTH    7
 #define SLASH_IMAGE_SLASH_CAPTURE   @"/image/capure.png"
+#define ADDRESS_LENGTH              10                      // 0x7918bd30
+#define SLASH_ZERO_X                @"/0x"
 
 @interface Console : NSObject
-@property (nonatomic,strong) NSMutableDictionary* imageStore;
+@property (nonatomic,strong) NSMutableDictionary* objectStore;
 @property (nonatomic,strong) id target;
 @property (nonatomic,strong) HTTPServer *httpServer;
 
@@ -26,5 +28,6 @@
 +(Console*) sharedInstance ;
 +(UIViewController*) root ;
 +(UIViewController*) top ;
+-(NSDictionary*) objectInfo:(NSString*)address ;
 
 @end
