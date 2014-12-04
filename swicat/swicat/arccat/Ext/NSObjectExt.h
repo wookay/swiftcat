@@ -18,3 +18,11 @@
 -(NSArray*) getters ;
 
 @end
+
+
+
+@interface NSObject (CallMethod)
+
+- (id) call_method:(NSString *)sel ;
+
+@end

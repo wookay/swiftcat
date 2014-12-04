@@ -71,7 +71,11 @@
 @implementation Console
 
 +(UIViewController*) root {
+#ifndef TARGET_IS_EXTENSION
     return UIApplication.sharedApplication.delegate.window.rootViewController;
+#else
+    return nil;
+#endif
 }
 
 +(UIViewController*) top {
@@ -125,9 +129,11 @@
         [ary addObject:SWF(@"%@", statusBar).escapeHTML];
         [ary addObject:SWF(@"<img src='%@%@' title='%@'/>", SLASH_IMAGE_SLASH, address, address)];
     }
+#ifndef TARGET_IS_EXTENSION
     for (UIWindow* window in UIApplication.sharedApplication.windows) {
         [ary addObject:SWF(@"%@", window).escapeHTML];
     }
+#endif
     [ary addObject:SWF(@"<img src='%@' title='%@'/>", SLASH_IMAGE_SLASH_CAPTURE, SLASH_IMAGE_SLASH_CAPTURE)];
     [ary addObject:@"</pre>"];
     return [ary componentsJoinedByString:@"\n"];
@@ -192,6 +198,7 @@
 }
 
 -(UIView*) statusBar {
+#ifndef TARGET_IS_EXTENSION
     if (! CGRectIsEmpty([UIApplication sharedApplication].statusBarFrame)) {
         Class statusBarWindow = NSClassFromString(@"UIStatusBarWindow");
         if (NULL == statusBarWindow) {
@@ -200,6 +207,7 @@
             return [statusBarWindow.subviews objectAtIndex:0];
         }
 	}
+#endif
     return nil;
 }
 
@@ -220,6 +228,7 @@
 }
 
 -(UIImage*) captureImage {
+#ifndef TARGET_IS_EXTENSION
 	UIWindow* window = [UIApplication sharedApplication].keyWindow;
     UIGraphicsBeginImageContextWithOptions(window.bounds.size, window.opaque, 0.0);
 	CGContextRef ctx = UIGraphicsGetCurrentContext();
@@ -230,6 +239,7 @@
     if (nil != statusBar) {
         [statusBar.layer renderInContext:ctx];
     }
+#endif
 	UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
 	UIGraphicsEndImageContext();
 	return newImage;

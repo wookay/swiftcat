@@ -15,6 +15,7 @@
 #import "Logger.h"
 #import "NSValueExt.h"
 
+
 @implementation NSObject (Ext)
 
 -(NSString*) className {
@@ -178,5 +179,18 @@
 	}
 	return ret;
 }
+
+@end
+
+
+
+@implementation NSObject (CallMethod)
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+- (id) call_method:(NSString *)sel {
+    return (id)[self performSelector:NSSelectorFromString(sel)];
+}
+#pragma clang diagnostic pop
 
 @end
