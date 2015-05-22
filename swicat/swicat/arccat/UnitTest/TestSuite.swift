@@ -61,6 +61,14 @@ func assert_equal(
     }
 }
 
+func assert_equal(a: [Int], b: [Int],
+    function: String = __FUNCTION__,
+    file: String = __FILE__,
+    line: Int = __LINE__,
+    column: Int = __COLUMN__) {
+        assert_equal(true, a==b, function: function, file: file, line: line, column: column)
+}
+
 func assert_true(condition: Bool,
     function: String = __FUNCTION__,
     file: String = __FILE__,
