@@ -1,8 +1,4 @@
 swiftcat
 ========
 
-* samples/Timerouswift
-
-* slide/examples/TShirts.playground  http://www.slideshare.net/wookay/swift-playgrounds
-
-* swicat
+[![Build Status](https://api.travis-ci.org/wookay/swiftcat.svg?branch=master)](https://travis-ci.org/wookay/swiftcat)
