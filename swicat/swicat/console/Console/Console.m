@@ -203,7 +203,7 @@
         Class statusBarWindow = NSClassFromString(@"UIStatusBarWindow");
         if (NULL == statusBarWindow) {
         } else {
-            UIWindow* statusBarWindow = objc_msgSend(UIApplication.sharedApplication, NSSelectorFromString((@"statusBarWindow")));
+            UIWindow* statusBarWindow = objc_msgSend(UIApplication.sharedApplication, NSSelectorFromString(@"statusBarWindow"));
             return [statusBarWindow.subviews objectAtIndex:0];
         }
 	}
