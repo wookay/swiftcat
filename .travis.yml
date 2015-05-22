@@ -1,4 +1,8 @@
 language: objective-c
 osx_image: xcode63
+env:
+  global:
+    - LANG=en_US.UTF-8
+    - LC_ALL=en_US.UTF-8
 script:
 - xcodebuild -project swicat/TestApp/TestApp.xcodeproj -scheme "TestApp" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 5" ONLY_ACTIVE_ARCH=NO test
