@@ -10,19 +10,19 @@
 class TestSwift : NSObject {
 
     func test_number() {
-        assert_equal(3, 1+2)
+        assert_equal(3, got: 1+2)
     }
     
     func test_string() {
-        assert_equal("abc", "a"+"b"+"c")
+        assert_equal("abc", got: "a"+"b"+"c")
     }
 
     func test_array() {
-        assert_equal([1,2,3], [1,2]+[3])
+        assert_equal([1,2,3], b: [1,2]+[3])
     }
 
     func test_dictionary() {
-        assert_equal(["a": 5], ["a": 5])
+        assert_equal(["a": 5], got: ["a": 5])
     }
 
 }

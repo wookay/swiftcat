@@ -34,11 +34,10 @@
         (void) objc_getClassList (classes, numClasses);
         for (int idx = 0; idx < numClasses; idx++) {
             NSString* className = NSStringFromClass(classes[idx]);
-            if (objc_msgSend(className, UNITTEST_TARGET_CLASS_FILTERING_SELECTOR, @"Test")) {
+            if ([className hasPrefix:@"Test"]) {
                 [targetClasses addObject:className];
             }
         }
-        //free(classes);
     }
     for (NSString* targetClassString in targetClasses) {
         Class targetClass = NSClassFromString(targetClassString);

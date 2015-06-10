@@ -28,9 +28,9 @@ func log_info(
     file: String = __FILE__,
     line: Int = __LINE__,
     column: Int = __COLUMN__) {
-    print(NSString(format: "%@ #%03d,%02d %@ ", file, line, column, function))
-    print(a)
-    print(LF)
+    print(NSString(format: "%@ #%03d,%02d %@ ", file, line, column, function), appendNewline: false)
+    print(a, appendNewline: false)
+    print(LF, appendNewline: false)
 }
 
 func assert_equal(
@@ -45,19 +45,19 @@ func assert_equal(
     if equals {
         UnitTestManager.sharedInstance().assertions += 1;
         if (UnitTestManager.sharedInstance().dot_if_passed) {
-            print(".");
+            print(".", appendNewline: false);
         } else {
-            print("passed: ")
-            print(got)
-            print("\n")
+            print("passed: ", appendNewline: false)
+            print(got, appendNewline: false)
+            print("\n", appendNewline: false)
         }
     } else {
         UnitTestManager.sharedInstance().failures += 1;
-        print("\n")
-        print(NSString(format: "%@ #%03d,%02d %@\nAssertion failed\nExpected: ", file, line, column, function))
-        print(expected)
-        print("\nGot: ")
-        print(got)
+        print("\n", appendNewline: false)
+        print(NSString(format: "%@ #%03d,%02d %@\nAssertion failed\nExpected: ", file, line, column, function), appendNewline: false)
+        print(expected, appendNewline: false)
+        print("\nGot: ", appendNewline: false)
+        print(got, appendNewline: false)
     }
 }
 
@@ -66,7 +66,7 @@ func assert_equal(a: [Int], b: [Int],
     file: String = __FILE__,
     line: Int = __LINE__,
     column: Int = __COLUMN__) {
-        assert_equal(true, a==b, function: function, file: file, line: line, column: column)
+        assert_equal(true, got: a==b, function: function, file: file, line: line, column: column)
 }
 
 func assert_true(condition: Bool,
@@ -74,5 +74,5 @@ func assert_true(condition: Bool,
     file: String = __FILE__,
     line: Int = __LINE__,
     column: Int = __COLUMN__) {
-        assert_equal(true, condition, function: function, file: file, line: line, column: column)
+        assert_equal(true, got: condition, function: function, file: file, line: line, column: column)
 }
