@@ -5,4 +5,4 @@ env:
     - LANG=en_US.UTF-8
     - LC_ALL=en_US.UTF-8
 script:
-- xcodebuild test -project swicat/TestApp/TestApp.xcodeproj -scheme TestApp -sdk iphonesimulator -configuration Release -derivedDataPath build -destination "name=iPhone 5s" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO GCC_SYMBOLS_PRIVATE_EXTERN=NO
+- xcodebuild test -project swicat/TestApp/TestApp.xcodeproj -configuration Debug -derivedDataPath build -destination 'name=iPhone 5s' -scheme TestApp
