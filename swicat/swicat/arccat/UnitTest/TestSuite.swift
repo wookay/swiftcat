@@ -46,19 +46,19 @@ func assert_equal(
     if equals {
         UnitTestManager.sharedInstance().assertions += 1;
         if (UnitTestManager.sharedInstance().dot_if_passed) {
-            print(".", appendNewline: false);
+            print(".")
         } else {
-            print("passed: ", appendNewline: false)
-            print(got, appendNewline: false)
-            print("\n", appendNewline: false)
+            print("passed: ")
+            print(got)
+            print("\n")
         }
     } else {
         UnitTestManager.sharedInstance().failures += 1;
-        print("\n", appendNewline: false)
+        print("\n")
         print(String(format: "%@ #%03d,%02d %@\nAssertion failed\nExpected: ", file, line, column, function))
-        print(expected, appendNewline: false)
-        print("\nGot: ", appendNewline: false)
-        print(got, appendNewline: false)
+        print(expected)
+        print("\nGot: ")
+        print(got)
     }
 }
 

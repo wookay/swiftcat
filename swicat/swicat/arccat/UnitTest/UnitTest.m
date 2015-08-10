@@ -135,7 +135,7 @@
         if (UnitTestManager.sharedInstance.dot_if_passed) {
             print_log_info(@".");
         } else {
-            print_log_info(@"%@%d%@%@", file, line, @"passed: %@", got);
+            print_log_info(@"%@ %d\npassed: %@\n", file, line, got);
         }
     } else {
         UnitTestManager.sharedInstance.failures += 1;

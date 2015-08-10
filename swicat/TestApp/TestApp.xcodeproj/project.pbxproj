@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C47A6C81B78F1D700ABF894 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6C71B78F1D700ABF894 /* TestSwift.swift */; };
+		1C47A6C91B78F1DE00ABF894 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6C71B78F1D700ABF894 /* TestSwift.swift */; };
+		1C47A6D11B78F26900ABF894 /* TestArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6CA1B78F26900ABF894 /* TestArray.m */; };
+		1C47A6D21B78F26900ABF894 /* TestArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6CA1B78F26900ABF894 /* TestArray.m */; };
+		1C47A6D31B78F26900ABF894 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6CB1B78F26900ABF894 /* TestClass.m */; };
+		1C47A6D41B78F26900ABF894 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6CB1B78F26900ABF894 /* TestClass.m */; };
+		1C47A6D51B78F26900ABF894 /* TestDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6CC1B78F26900ABF894 /* TestDate.m */; };
+		1C47A6D61B78F26900ABF894 /* TestDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6CC1B78F26900ABF894 /* TestDate.m */; };
+		1C47A6D71B78F26900ABF894 /* TestDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6CD1B78F26900ABF894 /* TestDictionary.m */; };
+		1C47A6D81B78F26900ABF894 /* TestDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6CD1B78F26900ABF894 /* TestDictionary.m */; };
+		1C47A6D91B78F26900ABF894 /* TestNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6CE1B78F26900ABF894 /* TestNumber.m */; };
+		1C47A6DA1B78F26900ABF894 /* TestNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6CE1B78F26900ABF894 /* TestNumber.m */; };
+		1C47A6DB1B78F26900ABF894 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6CF1B78F26900ABF894 /* TestObject.m */; };
+		1C47A6DC1B78F26900ABF894 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6CF1B78F26900ABF894 /* TestObject.m */; };
+		1C47A6DD1B78F26900ABF894 /* TestString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6D01B78F26900ABF894 /* TestString.m */; };
+		1C47A6DE1B78F26900ABF894 /* TestString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C47A6D01B78F26900ABF894 /* TestString.m */; };
 		1C8695D71B0F0234006724E5 /* NSArrayExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C86956C1B0F0234006724E5 /* NSArrayExt.m */; };
 		1C8695D81B0F0234006724E5 /* NSArrayExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C86956C1B0F0234006724E5 /* NSArrayExt.m */; };
 		1C8695D91B0F0234006724E5 /* NSClassExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C86956E1B0F0234006724E5 /* NSClassExt.m */; };
@@ -91,22 +107,7 @@
 		1C8696281B0F0234006724E5 /* ResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695C81B0F0234006724E5 /* ResponseHandler.m */; };
 		1C8696291B0F0234006724E5 /* UIViewConsoleExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695CA1B0F0234006724E5 /* UIViewConsoleExt.m */; };
 		1C86962A1B0F0234006724E5 /* UIViewConsoleExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695CA1B0F0234006724E5 /* UIViewConsoleExt.m */; };
-		1C86962B1B0F0234006724E5 /* TestArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695CD1B0F0234006724E5 /* TestArray.m */; };
-		1C86962C1B0F0234006724E5 /* TestArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695CD1B0F0234006724E5 /* TestArray.m */; };
-		1C86962D1B0F0234006724E5 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695CE1B0F0234006724E5 /* TestClass.m */; };
-		1C86962E1B0F0234006724E5 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695CE1B0F0234006724E5 /* TestClass.m */; };
-		1C86962F1B0F0234006724E5 /* TestDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695CF1B0F0234006724E5 /* TestDate.m */; };
-		1C8696301B0F0234006724E5 /* TestDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695CF1B0F0234006724E5 /* TestDate.m */; };
-		1C8696311B0F0234006724E5 /* TestDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695D01B0F0234006724E5 /* TestDictionary.m */; };
-		1C8696321B0F0234006724E5 /* TestDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695D01B0F0234006724E5 /* TestDictionary.m */; };
-		1C8696331B0F0234006724E5 /* TestNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695D11B0F0234006724E5 /* TestNumber.m */; };
-		1C8696341B0F0234006724E5 /* TestNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695D11B0F0234006724E5 /* TestNumber.m */; };
-		1C8696351B0F0234006724E5 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695D21B0F0234006724E5 /* TestObject.m */; };
-		1C8696361B0F0234006724E5 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695D21B0F0234006724E5 /* TestObject.m */; };
-		1C8696371B0F0234006724E5 /* TestString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695D31B0F0234006724E5 /* TestString.m */; };
-		1C8696381B0F0234006724E5 /* TestString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695D31B0F0234006724E5 /* TestString.m */; };
-		1C8696391B0F0234006724E5 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695D51B0F0234006724E5 /* TestSwift.swift */; };
-		1C86963A1B0F0234006724E5 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8695D51B0F0234006724E5 /* TestSwift.swift */; };
+		1CC70B3A1B77CC79009A2D0C /* RunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC70B391B77CC79009A2D0C /* RunTests.swift */; };
 		2B373F3D19816EF800C91A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B373F3C19816EF800C91A9E /* AppDelegate.swift */; };
 		2B373F3F19816EF800C91A9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B373F3E19816EF800C91A9E /* ViewController.swift */; };
 		2B373F4219816EF800C91A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B373F4019816EF800C91A9E /* Main.storyboard */; };
@@ -124,6 +125,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C47A6C71B78F1D700ABF894 /* TestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
+		1C47A6CA1B78F26900ABF894 /* TestArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArray.m; sourceTree = "<group>"; };
+		1C47A6CB1B78F26900ABF894 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		1C47A6CC1B78F26900ABF894 /* TestDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDate.m; sourceTree = "<group>"; };
+		1C47A6CD1B78F26900ABF894 /* TestDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDictionary.m; sourceTree = "<group>"; };
+		1C47A6CE1B78F26900ABF894 /* TestNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNumber.m; sourceTree = "<group>"; };
+		1C47A6CF1B78F26900ABF894 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		1C47A6D01B78F26900ABF894 /* TestString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestString.m; sourceTree = "<group>"; };
 		1C8695691B0F0234006724E5 /* arccat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arccat.h; sourceTree = "<group>"; };
 		1C86956B1B0F0234006724E5 /* NSArrayExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayExt.h; sourceTree = "<group>"; };
 		1C86956C1B0F0234006724E5 /* NSArrayExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayExt.m; sourceTree = "<group>"; };
@@ -209,14 +218,7 @@
 		1C8695C81B0F0234006724E5 /* ResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseHandler.m; sourceTree = "<group>"; };
 		1C8695C91B0F0234006724E5 /* UIViewConsoleExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewConsoleExt.h; sourceTree = "<group>"; };
 		1C8695CA1B0F0234006724E5 /* UIViewConsoleExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewConsoleExt.m; sourceTree = "<group>"; };
-		1C8695CD1B0F0234006724E5 /* TestArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArray.m; sourceTree = "<group>"; };
-		1C8695CE1B0F0234006724E5 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
-		1C8695CF1B0F0234006724E5 /* TestDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDate.m; sourceTree = "<group>"; };
-		1C8695D01B0F0234006724E5 /* TestDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDictionary.m; sourceTree = "<group>"; };
-		1C8695D11B0F0234006724E5 /* TestNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNumber.m; sourceTree = "<group>"; };
-		1C8695D21B0F0234006724E5 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
-		1C8695D31B0F0234006724E5 /* TestString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestString.m; sourceTree = "<group>"; };
-		1C8695D51B0F0234006724E5 /* TestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
+		1CC70B391B77CC79009A2D0C /* RunTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunTests.swift; sourceTree = "<group>"; };
 		2B373F3719816EF800C91A9E /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B373F3B19816EF800C91A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B373F3C19816EF800C91A9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -465,13 +467,13 @@
 		1C8695CC1B0F0234006724E5 /* ObjectiveCTestCases */ = {
 			isa = PBXGroup;
 			children = (
-				1C8695CD1B0F0234006724E5 /* TestArray.m */,
-				1C8695CE1B0F0234006724E5 /* TestClass.m */,
-				1C8695CF1B0F0234006724E5 /* TestDate.m */,
-				1C8695D01B0F0234006724E5 /* TestDictionary.m */,
-				1C8695D11B0F0234006724E5 /* TestNumber.m */,
-				1C8695D21B0F0234006724E5 /* TestObject.m */,
-				1C8695D31B0F0234006724E5 /* TestString.m */,
+				1C47A6CA1B78F26900ABF894 /* TestArray.m */,
+				1C47A6CB1B78F26900ABF894 /* TestClass.m */,
+				1C47A6CC1B78F26900ABF894 /* TestDate.m */,
+				1C47A6CD1B78F26900ABF894 /* TestDictionary.m */,
+				1C47A6CE1B78F26900ABF894 /* TestNumber.m */,
+				1C47A6CF1B78F26900ABF894 /* TestObject.m */,
+				1C47A6D01B78F26900ABF894 /* TestString.m */,
 			);
 			path = ObjectiveCTestCases;
 			sourceTree = "<group>";
@@ -479,7 +481,7 @@
 		1C8695D41B0F0234006724E5 /* SwiftTestCases */ = {
 			isa = PBXGroup;
 			children = (
-				1C8695D51B0F0234006724E5 /* TestSwift.swift */,
+				1C47A6C71B78F1D700ABF894 /* TestSwift.swift */,
 			);
 			path = SwiftTestCases;
 			sourceTree = "<group>";
@@ -530,6 +532,7 @@
 			isa = PBXGroup;
 			children = (
 				2B373F4D19816EF800C91A9E /* Supporting Files */,
+				1CC70B391B77CC79009A2D0C /* RunTests.swift */,
 			);
 			path = TestAppTests;
 			sourceTree = "<group>";
@@ -645,9 +648,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C86961F1B0F0234006724E5 /* HTTPRedirectResponse.m in Sources */,
+				1C47A6D71B78F26900ABF894 /* TestDictionary.m in Sources */,
 				1C8696051B0F0234006724E5 /* DDRange.m in Sources */,
 				1C8695DF1B0F0234006724E5 /* NSNumberExt.m in Sources */,
-				1C8696351B0F0234006724E5 /* TestObject.m in Sources */,
 				1C86960D1B0F0234006724E5 /* HTTPServer.m in Sources */,
 				1C8695F91B0F0234006724E5 /* DDTTYLogger.m in Sources */,
 				1C8696011B0F0234006724E5 /* DDData.m in Sources */,
@@ -656,6 +659,8 @@
 				1C86961D1B0F0234006724E5 /* HTTPFileResponse.m in Sources */,
 				2B373F3F19816EF800C91A9E /* ViewController.swift in Sources */,
 				1C8695DB1B0F0234006724E5 /* NSDateExt.m in Sources */,
+				1C47A6DB1B78F26900ABF894 /* TestObject.m in Sources */,
+				1C47A6D91B78F26900ABF894 /* TestNumber.m in Sources */,
 				1C86960F1B0F0234006724E5 /* MultipartFormDataParser.m in Sources */,
 				1C8695D71B0F0234006724E5 /* NSArrayExt.m in Sources */,
 				1C8696271B0F0234006724E5 /* ResponseHandler.m in Sources */,
@@ -670,26 +675,24 @@
 				1C8695F51B0F0234006724E5 /* DDFileLogger.m in Sources */,
 				1C86960B1B0F0234006724E5 /* HTTPMessage.m in Sources */,
 				1C86961B1B0F0234006724E5 /* HTTPErrorResponse.m in Sources */,
-				1C8696311B0F0234006724E5 /* TestDictionary.m in Sources */,
-				1C86962F1B0F0234006724E5 /* TestDate.m in Sources */,
-				1C8696371B0F0234006724E5 /* TestString.m in Sources */,
-				1C86962B1B0F0234006724E5 /* TestArray.m in Sources */,
 				1C8696151B0F0234006724E5 /* HTTPAsyncFileResponse.m in Sources */,
+				1C47A6D31B78F26900ABF894 /* TestClass.m in Sources */,
 				1C8695EF1B0F0234006724E5 /* GCDAsyncSocket.m in Sources */,
+				1C47A6C81B78F1D700ABF894 /* TestSwift.swift in Sources */,
 				1C8695E51B0F0234006724E5 /* NSValueExt.m in Sources */,
 				1C8696291B0F0234006724E5 /* UIViewConsoleExt.m in Sources */,
-				1C8696331B0F0234006724E5 /* TestNumber.m in Sources */,
-				1C86962D1B0F0234006724E5 /* TestClass.m in Sources */,
 				1C8695E91B0F0234006724E5 /* Logger.m in Sources */,
 				1C8696211B0F0234006724E5 /* WebSocket.m in Sources */,
+				1C47A6D51B78F26900ABF894 /* TestDate.m in Sources */,
 				1C8696031B0F0234006724E5 /* DDNumber.m in Sources */,
 				2B373F3D19816EF800C91A9E /* AppDelegate.swift in Sources */,
 				1C8695F31B0F0234006724E5 /* DDASLLogger.m in Sources */,
 				1C8696091B0F0234006724E5 /* HTTPConnection.m in Sources */,
-				1C8696391B0F0234006724E5 /* TestSwift.swift in Sources */,
 				1C8695E31B0F0234006724E5 /* NSStringExt.m in Sources */,
 				1C8695EB1B0F0234006724E5 /* TestSuite.swift in Sources */,
 				1C8695E71B0F0234006724E5 /* UnitTestUI.m in Sources */,
+				1C47A6D11B78F26900ABF894 /* TestArray.m in Sources */,
+				1C47A6DD1B78F26900ABF894 /* TestString.m in Sources */,
 				1C8695D91B0F0234006724E5 /* NSClassExt.m in Sources */,
 				1C8696111B0F0234006724E5 /* MultipartMessageHeader.m in Sources */,
 				1C8695FD1B0F0234006724E5 /* DispatchQueueLogFormatter.m in Sources */,
@@ -703,8 +706,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C8696141B0F0234006724E5 /* MultipartMessageHeaderField.m in Sources */,
-				1C86963A1B0F0234006724E5 /* TestSwift.swift in Sources */,
+				1CC70B3A1B77CC79009A2D0C /* RunTests.swift in Sources */,
 				1C8696081B0F0234006724E5 /* HTTPAuthenticationRequest.m in Sources */,
+				1C47A6DC1B78F26900ABF894 /* TestObject.m in Sources */,
 				1C8696181B0F0234006724E5 /* HTTPDataResponse.m in Sources */,
 				1C8695F41B0F0234006724E5 /* DDASLLogger.m in Sources */,
 				1C86961E1B0F0234006724E5 /* HTTPFileResponse.m in Sources */,
@@ -712,10 +716,10 @@
 				1C8695DE1B0F0234006724E5 /* NSDictionaryExt.m in Sources */,
 				1C8695FC1B0F0234006724E5 /* ContextFilterLogFormatter.m in Sources */,
 				1C8695FE1B0F0234006724E5 /* DispatchQueueLogFormatter.m in Sources */,
-				1C8696321B0F0234006724E5 /* TestDictionary.m in Sources */,
 				1C8695E41B0F0234006724E5 /* NSStringExt.m in Sources */,
 				1C8695D81B0F0234006724E5 /* NSArrayExt.m in Sources */,
 				1C8696221B0F0234006724E5 /* WebSocket.m in Sources */,
+				1C47A6C91B78F1DE00ABF894 /* TestSwift.swift in Sources */,
 				1C8696021B0F0234006724E5 /* DDData.m in Sources */,
 				1C8696241B0F0234006724E5 /* Console.m in Sources */,
 				1C86960A1B0F0234006724E5 /* HTTPConnection.m in Sources */,
@@ -724,22 +728,23 @@
 				1C86960C1B0F0234006724E5 /* HTTPMessage.m in Sources */,
 				1C8695E61B0F0234006724E5 /* NSValueExt.m in Sources */,
 				1C8696061B0F0234006724E5 /* DDRange.m in Sources */,
-				1C8696341B0F0234006724E5 /* TestNumber.m in Sources */,
-				1C8696381B0F0234006724E5 /* TestString.m in Sources */,
 				1C8696041B0F0234006724E5 /* DDNumber.m in Sources */,
 				1C8695F81B0F0234006724E5 /* DDLog.m in Sources */,
 				1C8696121B0F0234006724E5 /* MultipartMessageHeader.m in Sources */,
+				1C47A6D81B78F26900ABF894 /* TestDictionary.m in Sources */,
+				1C47A6D61B78F26900ABF894 /* TestDate.m in Sources */,
+				1C47A6DE1B78F26900ABF894 /* TestString.m in Sources */,
+				1C47A6D21B78F26900ABF894 /* TestArray.m in Sources */,
 				1C8695DA1B0F0234006724E5 /* NSClassExt.m in Sources */,
 				1C8695EE1B0F0234006724E5 /* UnitTest.m in Sources */,
-				1C86962C1B0F0234006724E5 /* TestArray.m in Sources */,
 				1C8695E21B0F0234006724E5 /* NSObjectExt.m in Sources */,
-				1C8696301B0F0234006724E5 /* TestDate.m in Sources */,
 				1C8695E01B0F0234006724E5 /* NSNumberExt.m in Sources */,
+				1C47A6DA1B78F26900ABF894 /* TestNumber.m in Sources */,
+				1C47A6D41B78F26900ABF894 /* TestClass.m in Sources */,
 				1C86961A1B0F0234006724E5 /* HTTPDynamicFileResponse.m in Sources */,
 				1C8695EC1B0F0234006724E5 /* TestSuite.swift in Sources */,
 				1C8695F61B0F0234006724E5 /* DDFileLogger.m in Sources */,
 				1C8695DC1B0F0234006724E5 /* NSDateExt.m in Sources */,
-				1C86962E1B0F0234006724E5 /* TestClass.m in Sources */,
 				1C8696101B0F0234006724E5 /* MultipartFormDataParser.m in Sources */,
 				1C8695FA1B0F0234006724E5 /* DDTTYLogger.m in Sources */,
 				1C8696281B0F0234006724E5 /* ResponseHandler.m in Sources */,
@@ -749,7 +754,6 @@
 				1C8695E81B0F0234006724E5 /* UnitTestUI.m in Sources */,
 				1C86960E1B0F0234006724E5 /* HTTPServer.m in Sources */,
 				1C8695F21B0F0234006724E5 /* DDAbstractDatabaseLogger.m in Sources */,
-				1C8696361B0F0234006724E5 /* TestObject.m in Sources */,
 				1C8696161B0F0234006724E5 /* HTTPAsyncFileResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
