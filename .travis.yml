@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode6.4
 env:
   global:
-    - LANG=en_US.UTF-8
-    - LC_ALL=en_US.UTF-8
+  - LANG=en_US.UTF-8
+  - LC_ALL=en_US.UTF-8
 script:
-- xcodebuild test -project swicat/TestApp/TestApp.xcodeproj -configuration Debug -derivedDataPath build -destination 'name=iPhone 5s' -scheme TestApp
+  - xctool -project swicat/TestApp/TestApp.xcodeproj -scheme TestApp -sdk iphonesimulator run-tests
